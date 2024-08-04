@@ -1,51 +1,39 @@
 # TestAutomationSuite
-FitPeo Maven Project
-Overview
+**FitPeo Maven Project**
+**Overview**
 This Maven project is designed to test the FitPeo web application using Selenium WebDriver and TestNG. It includes a test script that interacts with the Revenue Calculator page of the application, adjusting sliders, updating text fields, and verifying results.
 
-Project Structure
+**Project Structure**
 src/main/java/com/fitpeo/pages: Contains the Page Object Model classes representing the web pages.
 HomePage.java
 RevenueCalculatorPage.java
 src/test/java/com/test/fitpeo: Contains the test classes.
 FitpeoTest.java
-Prerequisites
+**Prerequisites**
 Java Development Kit (JDK): Ensure you have JDK 8 or higher installed.
 Maven: Ensure Maven is installed.
 ChromeDriver: Download the ChromeDriver that matches your Chrome browser version and place it in a directory included in your system's PATH.
 Selenium WebDriver: Selenium WebDriver dependencies are managed via Maven in the pom.xml file.
-Setup
-Clone the Repository
-
-bash
-Copy code
+**Setup**
+**Clone the Repository**
 git clone <repository-url>
-Navigate to Project Directory
-
-bash
-Copy code
+**Navigate to Project Directory**
 cd fitpeo-maven-project
-Install Dependencies
+**Install Dependencies**
 
-Use Maven to install the necessary dependencies:
-
-bash
-Copy code
+**Use Maven to install the necessary dependencies:**
 mvn install
-Configuration
+**Configuration**
 Ensure that the ChromeDriver executable is available in your system's PATH, or update the WebDriver initialization in FitpeoTest.java to specify the path to chromedriver.
 
-Running Tests
+**Running Tests**
 To run the test cases:
 
-Run Tests Using Maven
-
-bash
-Copy code
+**Run Tests Using Maven**
 mvn test
 This command will compile the project, download dependencies, and execute the test cases defined in FitpeoTest.java.
 
-Test Case Details
+**Test Case Details**
 FitpeoTest.java
 Setup (@BeforeTest)
 
